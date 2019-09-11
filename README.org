@@ -1,0 +1,2 @@
+* Configuration files for lux
+These are miscellaneous configuration files associated with my acccount on lux.
