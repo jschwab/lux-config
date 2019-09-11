@@ -1,0 +1,11 @@
+#%Module1.0
+proc ModulesHelp { } {
+       Puts Stderr "This module adds ruby 2.6.4 to various paths"
+}
+
+module-whatis "Sets up ruby 2.6.4 in your environment"
+
+set HOME $env(HOME)
+set RUBY_PATH $HOME/modules/ruby-2.6.4
+prepend-path PATH               $RUBY_PATH/bin/
+prepend-path PATH               $HOME/.gem/ruby/2.6.0/bin
