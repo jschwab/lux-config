@@ -5,7 +5,8 @@ proc ModulesHelp { } {
 
 module-whatis "Sets up MESA SDK 20190830 in your environment"
 
-set MESASDK_ROOT /home/jwschwab/modules/mesasdk-20190830
+set HOME $env(HOME)
+set MESASDK_ROOT $HOME/modules/mesasdk-20190830
 setenv MESASDK_ROOT $MESASDK_ROOT
 prepend-path PATH               $MESASDK_ROOT/bin/
 prepend-path MANPATH            $MESASDK_ROOT/share/man/
