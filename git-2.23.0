@@ -1,0 +1,11 @@
+#%Module1.0
+proc ModulesHelp { } {
+       Puts Stderr "This module adds git 2.23.0 to various paths"
+}
+
+module-whatis "Sets up git 2.23.0 in your environment"
+
+set HOME $env(HOME)
+set GIT_PATH $HOME/modules/git-2.23.0
+prepend-path PATH               $GIT_PATH/bin/
+
